@@ -33,4 +33,9 @@ def select_all():
     for row in results:
         artist = Artist(row['name'], row['id'])
         artists.append(artist)
-    return artists
+        
+# def update(artist):
+#     sql = """UPDATE artists 
+#         SET (name) = (%s) where id = %s"""
+#     values = [artist.name, artist.id]
+#     run_sql(sql, values)
