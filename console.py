@@ -42,9 +42,7 @@ print(album_repository.albums_by_artist(artist1))
 
 album_repository.delete(album2.id)
 print(album_repository.select_all())
-
-album_repository.delete(album2.id)
-print(album_repository.select_all())
+# print(album2.__dict__)
 
 artist_repository.delete(artist1.id)
 print(artist_repository.select_all())
